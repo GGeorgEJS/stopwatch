@@ -1,0 +1,56 @@
+.timer
+    width: 50%
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__count
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 270px
+        width: 270px
+        border: 2px solid white
+        border-radius: 50%
+        .count
+            font-family: "Roboto Mono", monospace
+            font-weight: 300
+            font-size: 48px
+            color: white
+    &__buttons
+        width: 23rem
+        display: flex
+        justify-content: space-around
+        margin: 30px 0
+        .wrapper__btn
+            padding: 2px
+            border: 2px solid
+            border-radius: 50%
+            background: inherit !important
+            .btn
+                height: 65px
+                width: 65px
+                border-radius: 50%
+                border: none
+                outline: none
+                cursor: pointer
+                font-size: 16px
+                font-weight: 200
+                font-family: monospace
+        .grey
+            color: lightgrey
+            background-color: darkgrey
+            border-color: darkgrey
+        .darkgrey
+            color: lightgrey
+            background-color: grey
+            border-color: grey
+            cursor: no-drop !important
+        .green
+            color: lightgreen
+            background-color: green
+            border-color: green 
+        .red
+            color: red
+            background-color: darkred
+            border-color: darkred
