@@ -9,7 +9,7 @@ import { startWith, scan, tap, filter, mergeMap, switchMap, debounce, debounceTi
 })
 export class AppComponent implements OnInit, AfterViewInit {
 
-  timer: number = 0;
+  timer: number;
   timerStarted = false;
   timerObject$: Subject<{ pause?: boolean, timerValue?: number }> = new Subject();
 
@@ -48,7 +48,6 @@ export class AppComponent implements OnInit, AfterViewInit {
       ).subscribe(() => {
         this.timerStarted = false;
         this.timerObject$.next({ pause: true });
-        console.log('1');
       });
   }
 
